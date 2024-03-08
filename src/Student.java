@@ -1,6 +1,6 @@
 public class Student {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     Student(String name, int age) {
         this.name = name;
@@ -12,5 +12,13 @@ public class Student {
         return "[Name: " + name +
                 ", Age: " + age + "]"
                 ;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
